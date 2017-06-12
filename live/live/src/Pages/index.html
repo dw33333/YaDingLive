@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>亚丁胡杨</title>
+		<link rel="stylesheet" type="text/css" href="../../layui/css/layui.css" />
+		<link rel="stylesheet" type="text/css" href="../Common/common.css" />
+		<link rel="stylesheet" type="text/css" href="../Common/live.css"/>
+	</head>
+
+	<body>
+		<div class="header">
+			<ul class="layui-nav">
+				<li class="layui-nav-item">
+					<a href="">首页</a>
+				</li>
+				<li class="layui-nav-item layui-this">
+					<a href="javascript:;">课堂</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="">直播</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="javascript:;">往期</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="">发现</a>
+				</li>
+				<li class="search">
+					<input type="text" placeholder="输入内容"/>
+				</li>
+			</ul>
+		</div>
+		<div class="contriner">
+			<div class="contriner_top_box layui-clear">
+				<div class="left_contriner"></div>
+				<div class="right_contriner">
+					<div class="code_input" style="display: none;">
+						<h2 class="title">验证码登录</h2>
+						<div class="Verification">
+							<input type="text" placeholder="输入手机号"/>
+						</div>
+						<div class="code_box">
+							<input type="text" placeholder="输入验证码"/><span class="set_code pointer">发送验证码</span>
+						</div>
+						<div class="login_btn pointer" onclick="login('code')">登录</div>
+						<ul class="login_type layui-clear">
+							<li class="number_login pointer" onclick="SetLoginType('number_input')">账号登录</li>
+							<li class="reg pointer">注册 ></li>
+						</ul>
+					</div>
+					<div class="number_input">
+						<h2 class="title">账号登录</h2>
+						<div class="Verification">
+							<input type="text" placeholder="账号"/>
+						</div>
+						<div class="Verification">
+							<input type="password" placeholder="密码"/>
+						</div>
+						<ul class="layui-clear">
+							<li class="number_login pointer">
+								<label class="pointer">
+									<input type="checkbox" style="vertical-align: middle;"/>
+									记住密码
+								</label>
+							</li>
+							<li class="reg pointer">找回密码</li>
+						</ul>
+						<div class="login_Nbtn pointer" onclick="login('num')">登录</div>
+						<ul class="login_type layui-clear">
+							<li class="number_login pointer" onclick="SetLoginType('code_input')">验证码登录</li>
+							<li class="reg pointer">注册 ></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--下部分内容块-->
+			<div class="contriner_bottom_box layui-clear">
+				<div class="list_box"></div>
+				<div class="list_box"></div>
+				<div class="list_box"></div>
+				<div class="list_box"></div>
+				<div class="list_box"></div>
+				<div class="list_box"></div>
+			</div>
+		</div>
+	</body>
+	</body>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script src="../../layui/lay/dest/layui.all.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../Js/index.js" type="text/javascript" charset="utf-8"></script>
+</html>

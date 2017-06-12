@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>我的直播间</title>
+    <link rel="stylesheet" type="text/css" href="../../layui/css/layui.css" />
+    <link rel="stylesheet" type="text/css" href="../Common/common.css" />
+    <link rel="stylesheet" type="text/css" href="../Common/homePage.css">
+</head>
+<body>
+<header>
+    <div class="layui-nav">
+        <div class="layui-title">
+            <img src="../Assets/title.png" alt="">
+            <span>个人中心</span>
+        </div>
+    </div>
+</header>
+<!-- /header -->
+<div class="contriner">
+    <div class="person">
+        <div class="person-img">
+            <div class="person-page">
+                <img src="../Assets/tou1.png" alt="">
+            </div>
+            <div class="person-right">
+                <span>用户名字</span>
+                <img src="../Assets/nike.png" alt="">
+            </div>
+        </div>
+        <div class="person-url">
+            <a href="">查看我的主页 ></a>
+        </div>
+    </div>
+    <div class="aside">
+        <div class="aside-left">
+            <ul>
+                <li onclick="chosePerson(this)" data-type="1">
+                    <p>资料</p>
+                    <img src="../Assets/aside.png" alt="">
+                </li>
+                <li onclick="chosePerson(this)" data-type="2">
+                    <p>我的收藏</p>
+                    <img src="../Assets/aside.png" alt="">
+                </li>
+                <li onclick="chosePerson(this)" data-type="3">
+                    <p>观看记录</p>
+                     <img src="../Assets/aside.png" alt="">
+                </li>
+                <li onclick="chosePerson(this)" data-type="4">
+                    <p>我的直播间</p>
+                    <img src="../Assets/aside.png" alt="">
+                </li>
+                <li onclick="chosePerson(this)" data-type="5">
+                    <p>家庭账户</p>
+                    <img src="../Assets/aside.png" alt="">
+                </li>
+                <li style="border:none;" onclick="chosePerson(this)" data-type="6">
+                    <p>我的钱包</p>
+                    <img src="../Assets/aside.png" alt="">
+                </li>
+            </ul>
+        </div>
+        <div>
+        <!-- 我的直播间 -->
+        <div class="aside-right-room" style=" width:672px;height:423px;float:left;display:none;" data-type="4">
+            <div class="centera">
+              <p id="oranger">
+                  <a class="hover" href="javascript:;">首页</a>
+                  <a href="javascript:;">最近直播</a>
+                  <a href="javascript:;">我的礼物</a>
+                  <a href="javascript:;">佣金流水</a>
+              </p>
+              <div id="tablea" class="tablea">
+                <div class="box-room">
+                <select name="city" lay-verify="" style="width:78px;height:24px;float: right;margin: 10px;">
+                  <option value="">2017年</option>
+                </select>
+                    <div style="padding-top:135px;">
+                        <p style="font-size:56px;color:#ec6941;">199999.00</p>
+                        <span>我的佣金</span>
+                    </div>
+                </div>
+                <div class="box-room">2222</div>
+                <div class="box-room">
+                    <ul>
+                        <li>
+                        <div class="room-left">
+                        <img src="../Assets/jiangbei.png" alt="">
+                        <span>奖杯</span>
+                        <span>￥100</span>
+                        </div>
+                        <div>
+                            ×<span> 10</span>
+                        </div>
+                        <div>
+                            ￥<span>1000</span>
+                        </div>
+                        </li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="box-room">
+                    <ul class="money-ul">
+                        <li style="line-height:88px;">
+                        <span>时间</span><span>佣金</span><span>操作</span>
+                        </li>
+                        <li>
+                        <span>2017-7-7</span><span>￥1000</span><span><a href="">查看详情</a></span>
+                        </li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+              </div>
+             </div>
+        </div>
+        <!-- 我的直播间 -->
+        <!-- 我的资料 -->
+        <div class="aside-right">
+            <ul>
+                <li>昵称:&nbsp;&nbsp;&nbsp;&nbsp;<span>大鸭蛋</span></li>
+                <li>性别:&nbsp;&nbsp;&nbsp;&nbsp;<span>男</span></li>
+                <li>年龄:&nbsp;&nbsp;&nbsp;&nbsp;<span>18</span></li>
+                <li>所在地:&nbsp;&nbsp;&nbsp;&nbsp;<span>四川背景</span></li>
+                <li>简介:&nbsp;&nbsp;&nbsp;&nbsp;<span>500包夜</span></li>
+                <button class="layui-btn layui-btn-warm" style="margin-top:15px;color:#000;" onclick="changeMes(this)">修改资料</button>
+            </ul>
+        </div>
+        <!-- 我的资料 -->
+        <!-- 修改资料 -->
+        <div class="aside-right-change" style="height:457px;display:none;">
+            <ul>
+                <li>昵称:
+                <input type="text" name="title" required lay-verify="required" value="一号客人" class="layui-input">
+                </li>
+                <li>性别:&nbsp;&nbsp;&nbsp;&nbsp;
+                    <select name="city" lay-verify="">
+                      <option value="010" selected>男</option>
+                      <option value="021">女</option>
+                    </select>
+                </li>
+                <li>年龄:&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text" name="title" required lay-verify="required" value="18" class="layui-input">
+                </li>
+                <li>所在地:&nbsp;&nbsp;&nbsp;&nbsp;
+                    <select name="city" lay-verify="">
+                      <option value="010">北京</option>
+                      <option value="021">上海</option>
+                      <option value="0571">杭州</option>
+                    </select>
+                </li>
+                <li style="height: 100px;position:relative;"><span>简介</span>:&nbsp;&nbsp;&nbsp;&nbsp;
+                    <textarea placeholder="请输入" class="textarea"></textarea>
+                </li>
+                <button class="layui-btn layui-btn-warm" style="margin-top:15px;color:#000;" onclick="finishChange()">完成</button>
+                <button class="layui-btn layui-btn-primary" style="margin-top:15px;color:#000;" onclick="upIt(this)">取消</button>
+            </ul>
+        </div>
+        <!-- 修改资料 -->
+        <!-- 我的收藏 -->
+        <p id="11" style="display:none">我的收藏</p>
+        <!-- 我的收藏 -->
+        <!-- 观看记录 -->
+        <p id="12" style="display:none;">观看记录</p>
+        <!-- 观看记录 -->
+        <!-- 家庭账户 -->
+        <div class="aside-right-family" style="display:none;">
+            <div class="centera">
+              <p id="oranger-1">
+                  <a class="hover" href="javascript:;">首页</a>
+                  <a href="javascript:;">成员列表</a>
+                  <a href="javascript:;">充值记录</a>
+                  <a href="javascript:;">消费记录</a>
+              </p>
+              <div id="tablea-1" class="tablea">
+                <div class="box-room-1">
+                <div class="room-title">
+                    <div class="room-title-left">
+                        <img src="../Assets/tou1.png" height="66" width="66" alt="" style="margin-left:46px;">
+                        <div style="margin-left:22px;">
+                            <p style="text-align:left;font-size:17px;color:#b0b0b0;height:32px;">家庭ID</p>
+                            <span style="font-size:16px;">13890324709</span>
+                        </div>
+                    </div>
+                    <div class="room-title-right">
+                        <img src="../Assets/tou1.png" height="66" width="66" alt="" style="margin-left:46px;">
+                        <div style="margin-left:22px;">
+                            <p style="text-align:left;font-size:17px;height:32px;">大鸭蛋</p>
+                            <span style="font-size:16px;color:#b0b0b0;">户主</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="money-box">
+                    <div class="money-box-center">
+                    <div style="margin-top:36px;">
+                        <p>财富值</p>
+                        <p style="font-size:58px;color:#ec6941;margin-top:16px;margin-bottom:25px;">1650099.00</p>
+                        <input type="button" name="" value="充值" >
+                    </div>
+                    </div>
+                    <div class="money-box-bottom">
+                        我的积分<span>165000.00</span><a href="">兑换</a>
+                    </div>
+                </div>
+                </div>
+                <!-- 成员列表 -->
+                <div class="box-room-1">
+                <div class="aside-right-fance">
+                <ul>
+                <li>
+                    <div>
+                    <div style="float:left;margin-top:26px;margin-right:23px;">
+                           <img src="../Assets/tou1.png" alt="" width="62px" height="62px">
+                    </div>
+
+                        <div style="float:left;margin-top:30px;text-align: left;">
+                             <p style="display:inline-block;margin-bottom:10px;">
+                        <span>一个粉丝的名字</span>
+                        <img src="../Assets/nike.png" height="15" width="15" alt="">
+                        </p>
+                        <p>他很有个性的签名。。。。</p>
+                        </div>
+
+
+                    </div>
+                    <div class="add-vivw-team" style="margin-top:42px;" onclick="follow()">
+                        <span>移除</span>
+                    </div>
+                    </li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                </div>
+                </div>
+                <!-- 成员列表 -->
+                <!-- 充值记录 -->
+                <div class="box-room-1" style="background:#fff;">
+                    <ul class="money-ul" style="background:#fff;" id="copy-ul">
+                        <li style="line-height:88px;display: flex;justify-content: space-around;">
+                        <span>时间</span><span>佣金</span><span>操作</span>
+                        </li>
+                        <li>
+                        <span>2017-7-7</span><span>+1000</span><span><a href="">查看详情</a></span>
+                        </li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <!-- 充值记录 -->
+                <!-- 消费记录 -->
+                <div class="box-room-1">
+                    <ul class="money-ul">
+                        <li style="line-height:88px;">
+                        <span>时间</span><span>佣金</span><span>操作</span>
+                        </li>
+                        <li>
+                        <span>2017-7-7</span><span>￥1000</span><span><a href="">查看详情</a></span>
+                        </li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <!-- 消费记录 -->
+              </div>
+             </div>
+             </div>
+        <!-- 家庭账户 -->
+        <div class="aside-right-wallet" style="display:none;">
+            <div class="room-title">
+                    <div class="room-title-left">
+                        <img src="../Assets/m-1.png" height="66" width="66" alt="" style="margin-left:46px;">
+                        <div style="margin-left:22px;">
+                            <p style="text-align:left;font-size:17px;color:#b0b0b0;height:32px;">零钱</p>
+                            <span style="font-size:18px;">138900.00</span>
+                        </div>
+                    </div>
+                    <div class="room-title-right">
+                        <img src="../Assets/m-2.png" height="66" width="66" alt="" style="margin-left:46px;">
+                        <div style="margin-left:22px;">
+                            <p style="text-align:left;font-size:17px;height:32px;color:#b0b0b0;">佣金</p>
+                            <span style="font-size:18px;">18000.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="money-box" style="height:320px;">
+                    <div class="money-box-center">
+                    <div style="margin-top:66px;">
+                        <p style="font-size:16px;">我的余额</p>
+                        <p style="font-size:58px;color:#ec6941;margin-top:16px;margin-bottom:25px;">1650099.00</p>
+                    </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    </div>
+
+</div>
+</body>
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="../../layui/lay/dest/layui.all.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../Js/home.js"></script>
+</html>

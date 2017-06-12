@@ -1,0 +1,108 @@
+/*主页*/
+.search{
+	float: right;
+	height: 60px;
+	line-height: 60px;
+	position: relative;
+}
+.search::after{
+	position: absolute;
+	content: "222";
+	top: 0;
+	right: 5px;
+}
+.search input{
+	width: 130px;
+	height: 30px;
+	padding-left: 10px;
+	background:#434343;
+	border:none;
+}
+.contriner_top_box{
+	height: 380px;
+	padding: 10px;
+	outline: 1px solid red;
+	margin-bottom: 40px;
+}
+.left_contriner{
+	width: 680px;
+	height: 380px;
+	margin-right: 10px;
+	float: left;
+	background: rgba(0,0,0,.5);
+}
+.right_contriner{
+	width:250px;
+	height: 340px;
+	float: left;
+	background: white;
+	padding: 20px;
+}
+.contriner_bottom_box{
+	background: white;
+	padding: 20px 0 0 10px;
+	outline: 1px solid red;
+}
+.list_box{
+	margin:0 10px 20px;
+	width: 307px;
+	outline: 1px solid red;
+	float: left;
+	height: 300px;
+}
+/*登录验证*/
+.title{
+	text-align: center;
+	font-size: 20px;
+	line-height: 20px;
+	margin-bottom: 40px;
+}
+.Verification{
+	background: #DCDCDC;
+	padding: 15px;
+	margin-bottom: 20px;
+}
+.Verification input{
+	background: #DCDCDC;
+	border: none;
+}
+.code_box input{
+	width: 100px;
+	padding: 14px 20px;
+	background: #DCDCDC;
+	border: 1px solid #DCDCDC;
+}
+.code_box{
+	margin-bottom: 20px;
+}
+.set_code{
+	display: inline-block;
+	padding: 13px 19px;
+	background: #009FE9;
+	color: white;
+}
+
+.login_btn,.login_Nbtn{
+	height: 46px;
+	line-height: 46px;
+	color: white;
+	background: #FC9401;
+	text-align: center;
+	font-size: 16px;
+	
+}
+.login_btn{
+	margin: 50px 0;
+}
+.login_Nbtn{
+	margin: 30px 0;
+}
+.login_type{
+	color: #009FE9;
+}
+.number_login{
+	float: left;
+}
+.reg{
+	float: right;
+}

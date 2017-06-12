@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>朋友圈</title>
+    <link rel="stylesheet" type="text/css" href="../../layui/css/layui.css" />
+    <link rel="stylesheet" type="text/css" href="../Common/common.css" />
+    <link rel="stylesheet" type="text/css" href="../Common/homePage.css">
+</head>
+<body>
+<header>
+    <div class="layui-nav" style="overflow: auto;">
+        <div class="layui-title2" style="margin-top: 8px;">
+            <img src="../Assets/titile-f.png" alt="">
+            <span>朋友圈</span>
+        </div>
+    </div>
+</header>
+<!-- /header -->
+<div class="contriner">
+    <div class="person">
+        <div class="person-img">
+            <div class="person-page">
+                <img src="../Assets/tou1.png" alt="">
+            </div>
+            <div class="person-right">
+                <span>用户名字</span>
+                <img src="../Assets/nike.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="aside">
+        <div class="aside-left" style="height:280px;">
+           <ul>
+                <li onclick="chosePersonThree(this)" data-type="111">
+                    <p>好友圈</p>
+                    <img src="../Assets/aside.png" alt="">
+                </li>
+                <li onclick="chosePersonThree(this)" data-type="222">
+                    <p>我的好友圈</p>
+                    <img src="../Assets/aside.png" alt="">
+                </li>
+                <li onclick="chosePersonThree(this)" data-type="333">
+                    <p>我的评论</p>
+                     <img src="../Assets/aside.png" alt="">
+                </li>
+                <li onclick="chosePersonThree(this)" data-type="444">
+                    <p>我的赞</p>
+                    <img src="../Assets/aside.png" alt="">
+                </li>
+            </ul>
+        </div>
+        <div class="aside-right-friend" style="height:457px;">
+            <div class="friend-top">
+                <div class="friend-input">
+                    <textarea></textarea>
+                </div>
+                <div class="friend-sumit">
+                    <button type="" value="发布" id="sbmit-fabu">发布</button>
+                </div>
+                <div class="friend-bottom">
+                <img src="../Assets/f-p.png" alt="">
+                <span>图片</span>
+                 <img src="../Assets/f-v.png" alt="">
+                <span>视频</span>
+            </div>
+            </div>
+            <div>
+
+
+            <!-- 好友圈 -->
+            <div id="friend-change-1">
+                <p>好友圈</p>
+            </div>
+            <!-- 我的好友圈 -->
+            <div id="friend-change-2">
+                <p>我的好友圈</p>
+            </div>
+            <!-- 我的评论 -->
+            <div id="friend-change-3">
+                 <div class="change-4-l">
+                    <img src="../Assets/tou1.png" alt="">
+                    <span>你大爷</span>
+                </div>
+                <div class="change-4-r">
+                    <span>赞了</span>
+                    <p style="background: #d2d2d2;" class="change-text">俯拾地芥封建时代范德萨范德萨水电费水电费浇水都是非得失第三方aas
+                    </p>
+                    <p style="margin-top:16px;"><span style="color:#a3d3f4;padding-right:4px;">你大爷:</span>500包夜干不干</p>
+                </div>
+            </div>
+            <!-- 我的赞 -->
+            <div id="friend-change-4">
+                <div class="change-4-l">
+                    <img src="../Assets/tou1.png" alt="">
+                    <span>你大爷</span>
+                </div>
+                <div class="change-4-r">
+                    <span>赞了</span>
+                    <p style="background: #d2d2d2;" class="change-text">俯拾地芥封建时代范德萨范德萨水电费水电费浇水都是非得失第三方aas
+                    </p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="../../layui/lay/dest/layui.all.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../Js/home.js"></script>
+</html>

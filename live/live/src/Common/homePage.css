@@ -1,0 +1,555 @@
+header{
+    width:100%;
+    background:#313131;
+    height:40px;
+}
+.layui-nav{
+    height:40px;
+    overflow:auto;
+}
+ .layui-title{
+    margin-top: 8px;
+}
+.layui-title span{
+    font-size: 18px;
+    color:#d5ab0d;
+}
+.layui-title2 span{
+    font-size: 18px;
+    color:#d5ab0d;
+}
+.layui-title img{
+    width:16px;
+    height:16px;
+}
+.aside-hover{
+    background:#fde47f;
+}
+.person{
+    background:url(../Assets/backgd.png) no-repeat;
+    width:100%;
+    height:201px;
+    margin-top:11px;
+    position:relative;
+}
+.person-img{
+    width:260px;
+    height:124px;
+    margin-left:33px;
+    line-height:124px;
+    float: left;
+    margin-top:40px;
+}
+.person-url{
+    position:absolute;
+    right: 17px;
+    bottom: 17px;
+    width:130px;
+    height:24px;
+}
+.person-page{
+    width:124px;
+    height:124px;
+    border-radius: 50%;
+    float: left;
+     margin-right:20px;
+}
+.person-right span{
+    color:#fff;
+    font-size:18px;
+    padding-right: 10px;
+}
+.person-right{
+    width:105px;
+    height:124px;
+    float:left;
+}
+.person-url a{
+    color:#fff;
+    font-size:16px;
+}
+.aside-left{
+    width:315px;
+    height:421px;
+    background:#ffffff;
+    float:left;
+    margin-right:13px;
+    margin-top: 10px;
+}
+.aside-left li{
+    width:100%;
+    height:69px;
+    border-bottom: 1px solid #d2d2d2;
+    line-height:69px;
+}
+.aside-left li p{
+    text-align: left;
+    margin-left:57px;
+    font-size:18px;
+    display:inline;
+}
+.aside-left li img{
+    float:right;
+    margin-top:27px;
+    margin-right:26px;
+}
+.aside-left li:hover{
+    background:#fde47f;
+}
+.aside-right{
+    width:672px;
+    height:423px;
+    float:left;
+    background:#fff;
+    margin-top: 10px;
+}
+.aside-right ul{
+    width: 573px;
+    height:100%;
+    margin: auto;
+    font-size: 16px;
+}
+.aside-right li{
+    width:569px;
+    height:66px;
+    border-bottom: 1px solid #d2d2d2;
+    line-height:66px;
+}
+.layui-input{
+    display: inline;
+    width: 207px;
+}
+.aside-right select{
+    height:30px;
+    width:60px;
+}
+.textarea{
+    width:470px;
+    height:62px;
+    position:absolute;
+    bottom:16px;
+}
+
+//直播间
+.aside-right-room{
+    width:672px;
+    height:423px;
+    float:left;
+    margin-top: 10px;
+}
+.aside-right-room{
+    margin-top: 10px;
+}
+#oranger{
+    width:100%;
+    height:45px;
+    background:#fff;
+    display: flex;
+    justify-content: space-around;
+    line-height:45px;
+    margin-bottom: 3px;
+}
+#oranger a{
+    height:33px;
+    display: inline-block;
+    font-size: 16px;
+
+}
+.tablea{
+    width:100%;
+    height:381px;
+}
+.box-room{
+    width:100%;
+    height:381px;
+    background:#fff;
+    text-align:center;
+
+}
+.hover{
+    border-bottom:4px solid #fbc900;
+}
+.box-room li{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height:105px;
+    line-height:105px;
+}
+.money-ul{
+    width:640px;margin:0 auto;
+}
+.money-ul li{
+    height:59px;
+    width: 100%;
+    border-bottom:1px solid #aaaaaa;
+    line-height:59px;
+}
+.money-ul span{
+    margin-bottom:6px;
+    font-size:15px;
+}
+.money-ul a:hover{
+    color:#40b8ef;
+    text-decoration: underline;
+}
+/* 修改资料 */
+.aside-right-change{
+    width:672px;
+    height:423px;
+    float:left;
+    background:#fff;
+    margin-top: 10px;
+}
+.aside-right-change li{
+    width:569px;
+    height:66px;
+    border-bottom: 1px solid #d2d2d2;
+    line-height:66px;
+}
+.aside-right-change ul{
+    width: 573px;
+    height:100%;
+    margin: auto;
+    font-size: 16px;
+}
+/* 修改资料 */
+/* 个人主页 */
+.aside-left li span{
+   padding-left: 149px;
+}
+/* 个人主页 */
+/* 粉丝 */
+.aside-right-fance{
+    width:672px;
+    /* height:423px; */
+    float:left;
+    background:#fff;
+    /* margin-top: 10px; */
+}
+.aside-right-fance li{
+    width:569px;
+    height:107px;
+    border-bottom: 1px solid #d2d2d2;
+    /* line-height:107px; */
+    display: flex;
+    justify-content: space-between;
+    position:relative;
+}
+.aside-right-fance ul{
+    width: 573px;
+    height:100%;
+    margin: auto;
+    font-size: 16px;
+}
+.add-vivw{
+    background:#fb9400;
+    color:#fff;
+    text-align:center;
+    line-height:22px;
+    width:52px;
+    height:22px;
+    border-radius:4px;
+    cursor: pointer;
+}
+.add-vivw:hover{
+    opacity:0.8;
+}
+/* 粉丝 */
+/* 家庭账户 */
+.aside-right-family{
+    width:672px;
+    height:423px;
+    float:left;
+    margin-top: 10px;
+}
+#oranger-1{
+    width:100%;
+    height:45px;
+    background:#fff;
+    display: flex;
+    display: flex;
+    justify-content: space-around;
+    line-height:45px;
+    margin-bottom: 3px;
+}
+#oranger-1 a{
+    height:33px;
+    display: inline-block;
+    font-size: 16px;
+    justify-content: ar;
+}
+.room-title{
+    width:100%;
+    height:122px;
+    background:#fff;
+    line-height:122px;
+}
+.room-title-left{
+    width:302px;
+    height:82px;
+    float:left;
+    border-right: 1px solid #aaa;
+    display: flex;
+    justify-content: initial;
+    line-height: 40px;
+    margin-top:19px;
+}
+.room-title-right{
+    float:left;
+    width:302px;
+    height:82px;
+    display: flex;
+    justify-content: initial;
+    line-height: 40px;
+    margin-top:19px;
+}
+.box-room-1 {
+    width: 100%;
+    height: 381px;
+    text-align: center;
+}
+.money-box{
+    width:672px;
+    height:360px;
+    margin-top:10px;
+    background:#fff;
+    overflow: auto;
+}
+.money-box-center{
+    width:606px;
+    height:235px;
+    margin-top:46px;
+    margin-left:26px;
+    border:1px solid #aaa;
+    text-align:center;
+
+}
+.money-box-center input{
+    width:86px;
+    height:30px;
+    background:#00a0e9;
+    border:none;
+    outline: none;
+    color: #fff;
+    font-size:16px;
+}
+.money-box-bottom{
+    text-align:right;
+    margin-right:27px;
+    margin-top:30px;
+}
+.money-box-bottom a{
+    color:#aaa;
+    text-decoration:underline;
+}
+.money-box-bottom span{
+    font-size:26px;
+    color:#80c269;
+}
+/* 家庭账户 */
+/* 成员列表 */
+.add-vivw-team{
+    background:#aaa;
+    color:#fff;
+    text-align:center;
+    line-height:22px;
+    width:52px;
+    height:22px;
+    border-radius:4px;
+    cursor: pointer;
+}
+.add-vivw-team:hover{
+    opacity:0.8;
+}
+/* 成员列表 */
+/* 充值记录 */
+#copy-ul li{
+    display: flex;
+    justify-content: space-around;
+}
+/* 我的钱包 */
+.aside-right-wallet{
+    width:672px;
+    height:423px;
+    float:left;
+    margin-top: 10px;
+}
+/* 我的钱包 */
+/* 论坛 */
+.listSignUp {
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid #aaaaaa;
+    display: flex;
+    justify-content: space-around;
+    line-height: 60px;
+    font-size: 18px;
+}
+.aside-right-tan{
+    width:672px;
+    height:423px;
+    float:left;
+    margin-top: 10px;
+    font-size:17px;
+}
+.tiezi-f ul{
+    width: 640px;
+    height: 100%;
+    margin: auto;
+    font-size: 16px;
+}
+/* 论坛 */
+/* 好友圈 */
+.friend-top{
+    width:672px;
+    height:102px;
+    background:#fff;
+    position: relative;
+}
+.friend-input textarea{
+    width:566px;
+    height:55px;
+    resize: none;
+}
+.friend-input{
+    float:left;
+    margin-left:8px;
+     margin-top:8px;
+}
+#sbmit-fabu{
+    width:86px;
+    height:57px;
+    background:#fbc900;
+    font-size:23px;
+    text-align；center;
+    line-height:55px;
+    outline:none;
+    border:none;
+    font-weight: 600;
+    cursor:pointer;
+}
+#sbmit-fabu:hover{
+    opacity:0.8;
+}
+.aside-right-friend{
+    width: 672px;
+    height: 423px;
+    float: left;
+    margin-top: 10px;
+}
+.friend-sumit{
+    margin-top:8px;
+    float:left;
+}
+.friend-bottom{
+    display: flex;
+    position: absolute;
+    top:72px;
+    left:12px;
+
+}
+.friend-bottom span{
+    color:#aaa;
+    font-size:16px;
+    margin-right:10px;
+    padding-left: 3px;
+}
+/* 好友圈 */
+/* 我的赞 */
+#friend-change-4{
+    width: 672px;
+    height:156px;
+    background:#fff;
+    margin-top:14px;
+    display: none;
+}
+.change-4-l{
+    float:left;
+    width: 86px;
+    height:116px;
+}
+.change-4-r{
+    float:left;
+    margin-left:30px;
+    margin-top:30px;
+}
+.change-4-r span{
+    font-size:16px;
+}
+.change-text{
+    width: 496px;
+    height:40px;
+    line-height:40px;
+    text-align:left;
+    font-size: 17px;
+    margin-top:10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.change-4-l{
+    margin-top:26px;
+    margin-left:30px;
+}
+.change-4-l img{
+    width: 80px;
+    height:83px;
+    margin-bottom: 7px;
+}
+.change-4-l span{
+    padding-left:19px;
+    margin-top:5px;
+    font-size: 15px;
+    color:#6f6f6f;
+}
+/* 我的赞 */
+/* 我的评论 */
+#friend-change-3{
+    width: 672px;
+    height:156px;
+    background:#fff;
+    margin-top:14px;
+    display: none;
+}
+#friend-change-2{
+    display: none;
+}
+/* 我的评论 */
+/* 我的关注 */
+.aside-right-fanced{
+    width:672px;
+    /* height:423px; */
+    float:left;
+    background:#fff;
+    /* margin-top: 10px; */
+}
+.aside-right-fanced li{
+    width:569px;
+    height:107px;
+    border-bottom: 1px solid #d2d2d2;
+    /* line-height:107px; */
+    display: flex;
+    justify-content: space-between;
+    position:relative;
+}
+.aside-right-fanced ul{
+    width: 573px;
+    height:100%;
+    margin: auto;
+    font-size: 16px;
+}
+.add-vivwed{
+    background:#aaa;
+    color:#fff;
+    text-align:center;
+    line-height:22px;
+    width:52px;
+    height:22px;
+    border-radius:4px;
+    cursor: pointer;
+}
+.add-vivw:hover{
+    opacity:0.8;
+}
+/* 我的关注 */

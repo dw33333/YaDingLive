@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人主页</title>
+    <link rel="stylesheet" type="text/css" href="../../layui/css/layui.css" />
+    <link rel="stylesheet" type="text/css" href="../Common/common.css" />
+    <link rel="stylesheet" type="text/css" href="../Common/homePage.css">
+</head>
+<style type="text/css" media="screen">
+    .money-ul li span{
+        font-size:18px;
+    }
+</style>
+<body>
+<header>
+    <div class="layui-nav">
+        <div class="layui-title">
+            <img src="../Assets/title.png" alt="">
+            <span>个人中心</span>
+        </div>
+    </div>
+</header>
+<!-- /header -->
+<div class="contriner">
+    <div class="person">
+        <div class="person-img">
+            <div class="person-page">
+                <img src="../Assets/tou1.png" alt="">
+            </div>
+            <div class="person-right">
+                <span>用户名字</span>
+                <img src="../Assets/nike.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="aside">
+        <div class="aside-left">
+            <ul>
+                <li onclick="chosePersonTwo(this)" data-type="11">
+                    <p>资料</p>
+                    <img src="../Assets/aside.png" alt="">
+                </li>
+                <li onclick="chosePersonTwo(this)" data-type="21">
+                    <p>视频</p>
+                    <span>111</span>
+                    <img src="../Assets/aside.png" alt="">
+                </li>
+                <li onclick="chosePersonTwo(this)" data-type="31">
+                    <p>关注</p>
+                    <span>21</span>
+                     <img src="../Assets/aside.png" alt="">
+                </li>
+                <li onclick="chosePersonTwo(this)" data-type="41">
+                    <p>粉丝</p>
+                    <span>1111</span>
+                    <img src="../Assets/aside.png" alt="">
+                </li>
+                <li onclick="chosePersonTwo(this)" data-type="51">
+                    <p>论坛</p>
+                    <img src="../Assets/aside.png" alt="">
+                </li>
+                <li style="border:none;" onclick="chosePersonTwo(this)" data-type="61">
+                    <p>好友圈</p>
+                    <img src="../Assets/aside.png" alt="">
+                </li>
+            </ul>
+        </div>
+         <!-- 我的资料 -->
+         <div>
+        <div class="aside-right">
+            <ul>
+                <li>昵称:&nbsp;&nbsp;&nbsp;&nbsp;<span>大鸭蛋</span></li>
+                <li>性别:&nbsp;&nbsp;&nbsp;&nbsp;<span>男</span></li>
+                <li>年龄:&nbsp;&nbsp;&nbsp;&nbsp;<span>18</span></li>
+                <li>所在地:&nbsp;&nbsp;&nbsp;&nbsp;<span>四川背景</span></li>
+                <li>简介:&nbsp;&nbsp;&nbsp;&nbsp;<span>500包夜</span></li>
+                <button class="layui-btn layui-btn-warm" style="margin-top:15px;color:#000;" onclick="changeMes(this)">修改资料</button>
+            </ul>
+        </div>
+        <!-- 我的资料 -->
+         <!-- 修改资料 -->
+        <div class="aside-right-change" style="height:457px;display:none;">
+            <ul>
+                <li>昵称:
+                <input type="text" name="title" required lay-verify="required" value="一号客人" class="layui-input">
+                </li>
+                <li>性别:&nbsp;&nbsp;&nbsp;&nbsp;
+                    <select name="city" lay-verify="">
+                      <option value="010" selected>男</option>
+                      <option value="021">女</option>
+                    </select>
+                </li>
+                <li>年龄:&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text" name="title" required lay-verify="required" value="18" class="layui-input">
+                </li>
+                <li>所在地:&nbsp;&nbsp;&nbsp;&nbsp;
+                    <select name="city" lay-verify="">
+                      <option value="010">北京</option>
+                      <option value="021">上海</option>
+                      <option value="0571">杭州</option>
+                    </select>
+                </li>
+                <li style="height: 100px;position:relative;"><span>简介</span>:&nbsp;&nbsp;&nbsp;&nbsp;
+                    <textarea placeholder="请输入" class="textarea"></textarea>
+                </li>
+                <button class="layui-btn layui-btn-warm" style="margin-top:15px;color:#000;" onclick="finishChange()">完成</button>
+                <button class="layui-btn layui-btn-primary" style="margin-top:15px;color:#000;" onclick="upIt(this)">取消</button>
+            </ul>
+        </div>
+        <!-- 修改资料 -->
+        <!-- 视频 -->
+        <p id="11" style="display:none">我的收藏</p>
+        <!-- 视频 -->
+        <!-- 粉丝 -->
+        <div class="aside-right-fance" style="display:none;">
+            <ul>
+                <li>
+                    <div>
+                    <div style="float:left;margin-top:26px;margin-right:23px;">
+                           <img src="../Assets/tou1.png" alt="" width="62px" height="62px">
+                    </div>
+
+                        <div style="float:left;margin-top:30px;">
+                             <p style="display:inline-block;margin-bottom:10px;">
+                        <span>一个粉丝的名字</span>
+                        <img src="../Assets/nike.png" height="15" width="15" alt="">
+                        </p>
+                        <p>他很有个性的签名。。。。</p>
+                        </div>
+
+
+                    </div>
+                    <div class="add-vivw" style="margin-top:42px;" onclick="follow()">
+                        <span>+</span>
+                        <span>关注</span>
+                    </div>
+                </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <!-- 粉丝 -->
+        <!-- 论坛 -->
+        <div class="aside-right-tan" style="display:none;">
+            <div class="centera">
+              <p id="oranger-1">
+                  <a class="hover" href="javascript:;">我的帖子</a>
+                  <a href="javascript:;">我回复的</a>
+                  <a href="javascript:;">回复我的</a>
+              </p>
+              <div id="tablea-1" class="tablea">
+                <!-- 我的帖子 -->
+                <div class="box-room-1" style="background:#fff;">
+                <div class="tiezi-f">
+                <ul>
+                <li class="listSignUp">
+                    <a href="" style="color:#000;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;">这个是帖子的名称。。</a>
+                    <sapn>someboby</sapn>
+                    <span>2017-11-1 08:30</span>
+                </li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                </div>
+                </div>
+                <!-- 成员列表 -->
+                <!-- 充值记录 -->
+                <div class="box-room-1" style="background:#fff;">
+                    <ul class="money-ul" style="background:#fff;" id="copy-ul">
+                        <li style="line-height:59px;display: flex;justify-content: space-around;">
+                        <span>我好想你，我的女朋友。</span>
+                        <span>我回复:<i>帖子名称</i></span>
+                        <span>2017.8.12 08:30</span>
+                        </li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <!-- 充值记录 -->
+                <!-- 消费记录 -->
+                <div class="box-room-1" style="background:#fff;">
+                    <ul class="money-ul">
+                        <li style="line-height:59px;display: flex;justify-content: space-around;">
+                       <span>我好想你，我的女朋友。</span>
+                        <p>用户名字:<span>帖子名称</span></p>
+                        <span>2017.8.12 08:30</span>
+                        </li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <!-- 消费记录 -->
+              </div>
+             </div>
+             </div>
+        <!-- 论坛 -->
+        <!-- 我的关注 -->
+        <div class="aside-right-fanced" style="display:none;">
+            <ul>
+                <li>
+                    <div>
+                    <div style="float:left;margin-top:26px;margin-right:23px;">
+                           <img src="../Assets/tou1.png" alt="" width="62px" height="62px">
+                    </div>
+
+                        <div style="float:left;margin-top:30px;">
+                             <p style="display:inline-block;margin-bottom:10px;">
+                        <span>一个粉丝的名字</span>
+                        <img src="../Assets/nike.png" height="15" width="15" alt="">
+                        </p>
+                        <p>他很有个性的签名。。。。</p>
+                        </div>
+
+
+                    </div>
+                    <div class="add-vivwed" style="margin-top:42px;" onclick="followed(this)">
+                        <span>已关注</span>
+                    </div>
+                </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <!-- 我的关注 -->
+        <!-- 好友圈 -->
+         </div>
+    </div>
+    </div>
+</body>
+ <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+ <script src="../../layui/lay/dest/layui.all.js" type="text/javascript" charset="utf-8"></script>
+ <script src="../Js/home.js"></script>
+</html>
